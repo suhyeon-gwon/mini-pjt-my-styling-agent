@@ -16,6 +16,8 @@ from src.guardrails import REFUSAL_MESSAGES, outfit_lines
 from src.middleware import LoggingMiddleware, TextOnlyHistoryMiddleware, ToolFirstMiddleware
 from src.tools import AGENT_TOOLS, HITL_TOOLS, open_tools, tools_for
 
+# 테스트테스트
+
 RECURSION_LIMIT = 25
 TOOL_CALL_LIMIT = 10
 STYLIST_TEMPERATURE = 0.3  # 후보 안에서의 조합과 이유 작성. 판정·라우팅이 아니라서 0보다 약간 높인다
