@@ -23,7 +23,7 @@ def get_today_weather() -> str:
         없음. 항상 오늘 날씨를 돌려준다.
     """
     try:
-        result = "맑음"
+        result = today_weather()
     except Exception as e:
         return f"날씨 조회 실패: 처리 중 문제가 발생했습니다({type(e).__name__}). 날씨를 추정하지 말고 실패를 알리세요."
     return result if isinstance(result, str) else json.dumps(result, ensure_ascii=False, indent=2)
